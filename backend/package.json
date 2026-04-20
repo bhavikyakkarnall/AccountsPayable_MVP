@@ -1,0 +1,34 @@
+{
+  "name": "accounts-payable-backend",
+  "version": "1.0.0",
+  "description": "Backend scaffold for the Accounts Payable MVP.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "hash-password": "node scripts/hash-password.js",
+    "import-invoices:email": "node scripts/import-invoices.js"
+  },
+  "keywords": [
+    "accounts-payable",
+    "express",
+    "mysql",
+    "mvc"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mysql-session": "^3.0.3",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "imapflow": "^1.0.183",
+    "mailparser": "^3.7.4",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
